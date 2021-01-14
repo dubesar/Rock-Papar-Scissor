@@ -1,0 +1,23 @@
+body {
+    background: #EDF7F6;
+    /* overflow: hidden; */
+}
+
+.wi {
+    width: 100vw;
+}
+
+.t {
+    font-size: 150px;
+}
+
+.but {
+    font-size: 50px;
+    height: 100px;
+    margin-top: 25%;
+    width: 200px;
+    font-weight: 500;
+    background: #2660A4;
+    border-radius: 10px;
+    margin-left: 15px;
+}

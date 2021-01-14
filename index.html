@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissor</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "grid grid-cols-3 h-screen overflow-hidden">
+        <div>
+            <button onclick="play1()" class = "transform hover:scale-110 motion-reduce:transform-none focus:outline-none"><img src = "assets/paper.png" style="width: 300px; height: 33.3vh;"/></button>
+        </div>
+        <div class = "row-span-3">
+            <p id = "state" class = "text-center font-bold text-2xl mt-16"></p>
+            <div class = "flex justify-between">
+                <div class = "flex flex-col items-center mt-32">
+                    <h1 class = "lg:text-4xl font-bold">Player</h1>
+                    <h1 id = "sc1" class = "lg:text-5xl font-bold mt-16">0</h1>
+                </div>
+                <div class = "flex flex-col items-center mt-32">
+                    <h1 class = "lg:text-4xl font-bold">Computer</h1>
+                    <h1 id = "sc2" class = "lg:text-5xl font-bold mt-16">0</h1>
+                </div>
+            </div>
+            <p id = "updates" class="text-center font-bold text-2xl mt-16"></p>
+        </div>
+        <div class = "row-span-3 md:ml-32 lg:ml-56 2xl:ml-80">
+            <img id = "right" src = "assets/paper.png" style="width: 300px; height: 100vh;" />
+        </div>
+        <div>
+            <button onclick="play2()" class = "transform hover:scale-110 motion-reduce:transform-none focus:outline-none"><img src = "assets/rock.png" style="width: 300px; height: 33.3vh;"/></button>
+        </div>
+        <div>
+            <button onclick="play3()" class = "transform hover:scale-110 motion-reduce:transform-none focus:outline-none"><img src = "assets/scissor.png" style="width: 300px; height: 33.3vh;"/></button>
+        </div>
+    </div>
+    <script src = "src.js"></script>
+</body>
+</html>
